@@ -1,23 +1,22 @@
 function getData(){
-    console.log("Pegando os dados do usuário!");
+    console.log("Dados do usuário foram coletados");
 }
 
-function cadastrandoUsuario(){
-    console.log("Usuário cadastrado com sucesso!");
+function checkValues(){
+    console.log("Dados informados são válidos");
 }
 
-function bemVindo(){
-    console.log("Seja Bem Vindo!");
+function sendToDataBase(){  
+     console.log("Dados enviados!");
 }
 
 function main(){
     getData();
-    cadastrandoUsuario();
-    bemVindo();
+    checkValues();
+    sendToDataBase();
 }
 
 main();
-
 /*
 
 Após declarar as funções necessárias para cadastrar usuário, foi criada uma função master para chamar todas as funções necessárias
