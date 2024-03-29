@@ -14,11 +14,14 @@ torrar();
 
 // Função com parâmetro default
 
-function pedido(lanche, nome="Cliente"){
-    lanche = prompt("Informe qual será seu lanche: ");
+function pedido(lanche, nome){
+    lanche = prompt("Informe o lanche que deseja: ");
     nome = prompt("Informe o nome do cliente: ");
-    alert(`O cliente(a), ${nome} pediu ${lanche}`);
+    if(nome === ""){
+        nome = "Cliente"
+    }
+    alert(`Torrada feita com ${lanche}`);
+    alert(`ela é um pedido de ${nome}`);
 }
 
-pedido();
-
+pedido("Pão Integral");
