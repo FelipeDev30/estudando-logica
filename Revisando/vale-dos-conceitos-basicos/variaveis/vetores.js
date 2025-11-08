@@ -40,8 +40,18 @@ for (let i = 0; i < carros.length; i++) {
     console.log("-", carros[i]);
 }
 
+carros.pop(); // Removendo o último elemento do vetor
+console.log("\nApós remover o último carro:");
+for (let i = 0; i < carros.length; i++) {
+    console.log("-", carros[i]);
+}
+
 console.log(carros[0]); // Acessando o primeiro elemento do vetor
 console.log(carros[1]); // Acessando o segundo elemento do vetor
 console.log(carros[2]); // Acessando o terceiro elemento do vetor
-console.log(carros[3]); // Acessando o quarto elemento do vetor
 
+carros.push('Volkswagen'); // Adicionando um novo elemento ao final do vetor
+console.log("\nApós adicionar um novo carro:");
+for (let i = 0; i < carros.length; i++) {
+    console.log("-", carros[i]);
+}
