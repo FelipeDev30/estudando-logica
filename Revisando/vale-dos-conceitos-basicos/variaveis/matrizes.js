@@ -29,3 +29,8 @@ console.log("Matriz de Carros:");
 console.log(carros[0][0], "-", carros[0][1], "-", carros[0][2]);
 console.log(carros[1][0], "-", carros[1][1], "-", carros[1][2]);
 console.log(carros[2][0], "-", carros[2][1], "-", carros[2][2]);
+
+for(let i = 0; i < carros.length; i++) {
+    console.log("Carro " + (i + 1) + ":");
+    console.log(carros[i][0], "-", carros[i][1], "-", carros[i][2]);
+} 
