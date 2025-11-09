@@ -19,9 +19,6 @@ if(media < 5) {
 
 /* Calculadora Noob */
 
-let n1 = Number(prompt("Digite um número para seu calculo: ")); 
-let n2 = Number(prompt("Digite um segundo número para seu calculo: "));
-
 function soma(n1, n2) {
     let result = n1 + n2;
     return alert(`A soma entre ${n1} e ${n2} é igual: ${result}`); 
@@ -52,22 +49,34 @@ function potencia(n1, n2) {
     return alert(`A exponenciação entre ${n1} e ${n2} é igual: ${result}`);
 }
 
-function main(opçoes) {
-    opçoes = Number(prompt('Escolha o tipo de calculo: 1 - soma, 2 subtração, 3 multiplicação, 4 - Resto da Divisão, 5 - Divisão e 6 - Exponenciação'));
-    if(opçoes === 1){
-        return soma(n1, n2);
-    } else if(opçoes === 2){
-        return subtrair(n1, n2);
-    } else if(opçoes === 3) {
-        return multiplicar(n1, n2);
-    } else if (opçoes === 4) {
-        return divisorMod(n1, n2);
-    } else if(opçoes === 5) {
-        return divisor(n1, n2);
-    } else if(opçoes === 6) {
-        return potencia(n1, n2);
-    } else {
-        return alert("Digite uma opção válida!");
+
+function main() {
+    let n1 = Number(prompt("Digite um número para seu cálculo:")); 
+    let n2 = Number(prompt("Digite um segundo número para seu cálculo:"));
+    let opcoes = Number(prompt('Escolha o tipo de cálculo:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Resto da Divisão\n5 - Divisão\n6 - Exponenciação'));
+
+    switch(opcoes) {
+        case 1:
+            soma(n1, n2);
+            break;
+        case 2:
+            subtrair(n1, n2);
+            break;
+        case 3:
+            multiplicar(n1, n2);
+            break;
+        case 4:
+            divisorMod(n1, n2);
+            break;
+        case 5:
+            divisor(n1, n2);
+            break;
+        case 6:
+            potencia(n1, n2);
+            break;
+        default:
+            alert("Digite uma opção válida!");
+            break;
     }
 }
 
