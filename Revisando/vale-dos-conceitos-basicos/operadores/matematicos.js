@@ -14,39 +14,41 @@ if(media < 5) {
     alert(`Parabéns aluno aprovado com média: ${media}`)
 } else {
     alert(`Error, insira dados válidos.`)
-} */
+} 
+    
+*/
 
 
 /* Calculadora Noob */
 
 function soma(n1, n2) {
     let result = n1 + n2;
-    return alert(`A soma entre ${n1} e ${n2} é igual: ${result}`); 
+    return alert(`A soma entre ${n1} e ${n2} é igual: ${result.toFixed(2)}`); 
 }
 
 function subtrair(n1, n2) {
     result = n1 - n2;
-    return alert(`A subtração entre ${n1} e ${n2} é igual: ${result}`);
+    return alert(`A subtração entre ${n1} e ${n2} é igual: ${result}`); 
 }
 
 function multiplicar(n1, n2){
     let result = n1 * n2;
-    return alert(`A multiplicação entre ${n1} e ${n2} é igual: ${result}`);
+    return alert(`A multiplicação entre ${n1} e ${n2} é igual: ${result.toFixed(2)}`);
 }
 
 function divisorMod(n1, n2) {
     let result = n1 % n2;
-    return alert(`O resto da divisão entre ${n1} e ${n2} é igual: ${result}`);
+    return alert(`O resto da divisão entre ${n1} e ${n2} é igual: ${result.toFixed(2)}`);
 }
 
 function divisor(n1, n2) {
     let result = n1 / n2;
-    return alert(`A divisão entre ${n1} e ${n2} é igual: ${result}`);
+    return alert(`A divisão entre ${n1} e ${n2} é igual: ${result.toFixed(2)}`);
 }
 
 function potencia(n1, n2) {
     let result = n1 ** n2;
-    return alert(`A exponenciação entre ${n1} e ${n2} é igual: ${result}`);
+    return alert(`A exponenciação entre ${n1} e ${n2} é igual: ${result.toFixed(2)}`);
 }
 
 
