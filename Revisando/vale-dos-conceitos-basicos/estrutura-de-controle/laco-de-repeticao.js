@@ -17,19 +17,19 @@ Exemplos comuns de laços de repetição em JavaScript incluem:
 
 //2. while: Usado quando o número de iterações não é conhecido e depende de uma condição.
 // Exemplo:
-   let i = 0;
-   while (i < 5) {
-       console.log(i);
-       i++;
+   let indice = 0;
+   while (indice < 5) {
+       console.log(indice);
+       indice++;
    }
 
 //3.do...while: Similar ao while, mas garante que o bloco de código seja executado pelo menos uma vez.
 // Exemplo:
-   let i = 0;
+   let c = 0;
    do {
-       console.log(i);
+       console.log(c);
        i++;
-   } while (i < 5);
+   } while (c < 5);
 
 /*
 
