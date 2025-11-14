@@ -89,3 +89,4 @@ while (!nivelMaximo) {
         nivelMaximo = true; // evita loop infinito
     }
 }
+
