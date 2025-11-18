@@ -27,14 +27,3 @@ node caminho/para/o/arquivo.js
 **Como contribuir**
 - Faça um fork do repositório, crie uma branch com sua alteração e abra um pull request.
 - Prefira commits pequenos e descritivos; explique no PR o que foi adicionado ou corrigido.
-
-**Próximos passos sugeridos**
-- Adicionar uma pasta `exercicios-resolvidos/` com soluções comentadas.
-- Incluir um arquivo `CONTRIBUTING.md` com convenções de commit e instruções detalhadas.
-
-**Licença**
-- Este repositório está disponível sob licença permissiva — adicione uma `LICENSE` se desejar especificar.
-
----
-
-Se quiser, eu posso: criar um `CONTRIBUTING.md`, adicionar exemplos de execução com `package.json` ou gerar templates de issues e PRs. Qual opção prefere seguir em seguida?
