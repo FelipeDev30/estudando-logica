@@ -1,6 +1,6 @@
 /* 
 
-# O que de ser utilizado  #
+# O que deve ser utilizado  #
 
 - Variáveis (let, const)
 - Tipos de dados (string, number, boolean)
