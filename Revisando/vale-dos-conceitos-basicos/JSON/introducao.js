@@ -11,9 +11,6 @@ Exemplo de um objeto JSON:
 
 Neste exemplo, temos um objeto JSON que representa uma pessoa com três propriedades: nome, idade e cidade. Cada propriedade é composta por uma chave (por exemplo, "nome") e um valor correspondente (por exemplo, "João").
 
-
-*/
-
 const pessoa = {
     "nome": "João",
     "idade": 30,
@@ -32,6 +29,26 @@ console.log(pessoaJSON);
 const pessoaObj = JSON.parse(pessoaJSON);
 console.log(pessoaObj);
 
-/*
+
 Neste código, criamos um objeto JavaScript chamado "pessoa" que contém as mesmas propriedades do exemplo JSON. Em seguida, usamos console.log para acessar e exibir cada propriedade. Também demonstramos como converter o objeto JavaScript para uma string JSON usando JSON.stringify e como converter a string JSON de volta para um objeto JavaScript usando JSON.parse.
+
 */
+
+let name = "Felipe";
+let age = 31;
+let products = ["mouse redragon", "teclado mecânico redragon", "monitor gamer acer 23.5"]
+let productsValues = [70.59, 350.99, 1499.99]
+
+function generateInvoice(name, age, products, productsValues) {
+    console.log(`O comprador ${name}, de ${age}, adquiriu os seguintes produtos: ${products.join(", ")}. O valor total da compra foi de R$ ${productsValues.reduce((a, b) => a + b, 0).toFixed(2)}.`); 
+}
+
+let invoice = {
+    name: name,
+    age: age,
+    products: products,
+    productsValues: productsValues,
+    generateInvoice: generateInvoice
+}
+
+invoice.generateInvoice(invoice.name, invoice.age, invoice.products, invoice.productsValues);
