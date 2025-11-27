@@ -1,30 +1,37 @@
-let invoice = {
-    name: "Felipe",
-    age: 31,
-    products: {
-        0: ["mouse 2xwm", 29.90],
-        1: ["Teclado Mecânico", 129.90],
-        2: ["Monitor 32", 899.99]
-    }
+
+// JSON estruturado
+const invoice = {
+    "name": "Felipe",
+    "age": 31,
+    "products": [
+        {
+            "id": 0,
+            "name": "mouse 2xwm",
+            "price": 29.90
+        },
+        {
+            "id": 1,
+            "name": "Teclado Mecânico",
+            "price": 129.90
+        },
+        {
+            "id": 2,
+            "name": "Monitor 32",
+            "price": 899.99
+        }
+    ]
+};
+
+// Função para gerar a fatura
+function generateInvoice(invoice) {
+    console.log(`O comprador é ${invoice.name}`);
+    console.log(`A idade é ${invoice.age}`);
+    console.log(`-----------------------------`);
+
+    invoice.products.forEach(product => {
+        console.log(`- ${product.name}: R$ ${product.price.toFixed(2)}`);
+    });
 }
 
-generateInvoice(invoice)
-
-function generateInvoice(invoice){
-    console.log(`O comprador é ${invoice.name}`)
-    console.log(`A idade é ${invoice.age}`)
-    console.log(`-----------------------------`)
-
-    for(let index in invoice.products){
-        let [productName, productPrice] = invoice.products[index]
-        console.log(`- ${productName}: R$ ${productPrice}`)
-    }
-} 
-
-// Output:
-// O comprador é Felipe
-// A idade é 31
-// -----------------------------
-// - mouse 2xwm: R$ 29.9
-// - Teclado Mecânico: R$ 129.9
-// - Monitor 32: R$ 899.99
+// Executa a função
+generateInvoice(invoice);
