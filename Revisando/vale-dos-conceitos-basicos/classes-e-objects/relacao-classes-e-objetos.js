@@ -31,3 +31,39 @@ meuCarro.frear();    // Output: Sedan está freiando!
 console.log(meuCarro.cor);   // Output: vermelho
 console.log(meuCarro.modelo); // Output: Sedan
 console.log(meuCarro.ano);    // Output: 2020
+
+/* ------------------------------------------------------------------------------------ */
+
+class herio {
+    constructor(nome, classe) {
+        this.nome = nome;
+        this.classe = classe;
+        this.nivel = 1;
+        this.vida = 100;
+        this.mana = 50;     
+    }
+    subirNivel() {
+        this.nivel += 1;
+        this.vida += 20;
+        this.mana += 10;
+        console.log(`${this.nome} subiu para o nível ${this.nivel}!`);
+    }
+    atacar() {
+        console.log(`${this.nome}, o ${this.classe}, está atacando!`);
+    }
+    defender() {
+        console.log(`${this.nome}, o ${this.classe}, está defendendo!`);
+    }
+}
+
+console.log('----------------------------');
+
+// Criando um objeto (instância) da classe herio
+const meuHeroi = new herio('Aragorn', 'Guerreiro');
+meuHeroi.atacar(); // Output: Aragorn, o Guerreiro, está atacando!
+meuHeroi.defender(); // Output: Aragorn, o Guerreiro, está defendendo!
+console.log(meuHeroi.nome);   // Output: Aragorn
+console.log(meuHeroi.classe); // Output: Guerreiro
+meuHeroi.subirNivel(); // Output: Aragorn subiu para o nível 2!
+console.log(meuHeroi.nivel); // Output: 2
+console.log(meuHeroi.vida);
