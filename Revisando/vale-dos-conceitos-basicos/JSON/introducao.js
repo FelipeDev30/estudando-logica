@@ -35,3 +35,4 @@ function generateInvoice(invoice) {
 
 // Executa a função
 generateInvoice(invoice);
+
